@@ -1,2 +1,2 @@
 # MyClass
-Aula com Alcebiades God
+Aula com Alcebiades
