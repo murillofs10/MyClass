@@ -18,6 +18,6 @@ phases:
       - echo Pushing the Docker images...
       - docker push $ACCOUNT_ID.dkr.ecr.$DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG 
       - echo Writing image definitions file...
-      - printf '[{"name":"nomeECR","imageUri":"%s"}]' $ACCOUNT_ID.dkr.ecr.$DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG > imagedefinitions.json 
+      - printf '[{"name":"streamlit","imageUri":"%s"}]' $ACCOUNT_ID.dkr.ecr.$DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG > imagedefinitions.json 
 artifacts:
   files: imagedefinitions.json
